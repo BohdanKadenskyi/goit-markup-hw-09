@@ -622,17 +622,6 @@ img {
   cursor: pointer;
 }
 
-/* .action__button--market {
-  content: '';
-  width: 28px;
-  height: 27px;
-  background-image: url('../image/icon/pushcart.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-right: 18px;
-  fill: var(--white-color);
-} */
 .action__button--cart {
   display: block;
   width: 28px;
@@ -673,29 +662,15 @@ img {
   transform: translateY(120%);
   transition: transform 250ms;
 }
-/* .card .overlay::before {
-  display: none;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  content: '';
-  width: calc(255px - 20px);
-  height: calc(282px - 20px);
-  background-color: rgba(0, 0, 0, 0.5);
-} */
 
 .collection-products__item:hover .card__overlay::before {
   transform: translateY(0);
 }
-/* .collection-products__item:hover .overlay::before {
-  display: block;
-} */
+
 .collection-products__item:hover .action {
   opacity: 1;
 }
-/* .collection-products__item:hover .action {
-  display: flex;
-} */
+
 .collection-products__item:hover .card__meta {
   background-color: var(--accent-color);
   transition: var(--animation-time) var(--timing-fn);
@@ -763,16 +738,6 @@ img {
 .action__item:active {
   background-color: var(--active-color);
 }
-
-/* .action-button {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--white-color);
-  cursor: pointer;
-  color: var(--white-color);
-} */
 
 .action__button--heart {
   display: block;
@@ -1171,6 +1136,13 @@ input {
 
 .newsletter-submit__btn {
   all: unset;
+  transform: scale(1);
+}
+
+.newsletter-submit__btn:hover,
+.newsletter-submit__btn:focus {
+  transform: scale(1.1);
+  border: 2px solid var(--black-color-font);
 }
 
 .newsletter-submit__icon {
@@ -1190,7 +1162,10 @@ input {
 .newsletter-submit__icon:hover,
 .newsletter-submit__icon:focus {
   transform: scale(1.1);
+  fill: var(--black-color-font);
+  border: 2px solid var(--black-color-font);
 }
+
 /* KEYFRAMES  */
 /* ZOOMIN */
 @keyframes zoomin {
