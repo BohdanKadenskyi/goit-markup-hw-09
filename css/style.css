@@ -230,6 +230,7 @@ img {
 .banner {
   position: relative;
   min-height: 600px;
+  /* второй вариант min-height: calc(100hv- 42px); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1162,7 +1163,7 @@ input {
 .newsletter-submit__icon:hover,
 .newsletter-submit__icon:focus {
   transform: scale(1.1);
-  fill: var(--black-color-font);
+
   border: 2px solid var(--black-color-font);
 }
 
